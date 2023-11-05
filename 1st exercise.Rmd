@@ -1,3 +1,4 @@
+```{R}
 set.seed(1)
 #set.seed - you can reproduce data, unique key for data to be used in other computer and for other users
 x = rnorm(50, 10, 2)
@@ -19,3 +20,43 @@ summary (out)
 summary (x)
 hist(out)
 hist(out, las=1, main="")
+
+
+
+```
+```{r}
+summary (x)
+
+```
+
+
+```{r}
+
+hist(out, col="blue")
+
+```
+```{r}
+hist(x, col="cornsilk")
+```
+```{r}
+SDout <- sd(out)
+se_x
+quantile(out, c(0.025, 0.975))
+rm(SD)
+mean(x) - 1.96*se_x
+mean(x) + 1.96*se_x
+
+```
+```{r}
+quantile(CV, c(0.025, 0.975))
+```
+```{r}
+lowervalue <- mean(x) - 1.96*se_x
+rm(uppervalue)
+uppervalue <- mean(x) + 1.96*se_x
+SDx <- sd(x)
+CV1 <- SDx/lowervalue
+CV2 <- SDx/uppervalue
+```
+
+
